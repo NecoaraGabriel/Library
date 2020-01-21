@@ -1,0 +1,127 @@
+﻿@model Library.Models.Catalog.AssetDetailModel
+
+<div class="container">
+    <div class="page-header clearfix detailHeading">
+        <h2 class="text-muted">View Library Item</h2>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <img class="detailImage" src="@Model.ImageUrl" width="320px" height="560px" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <p id="itemTitle">@Model.Title</p>
+            <p id="itemAuthor">@Model.AuthorOrDirector</p>
+            <p id="itemStatus">@Model.Status</p>
+            <p id="itemType">@Model.Type</p>
+            <p id="itemLocation">@Model.CurrentLocation</p>
+            @*Model.NumberOfCopies == 0 && *@
+            @if (Model.Status == "Lost")
+            {
+                <p>This item has been lost. It cannot be checked out.</p>
+                <p><a class="btn btn-lg btn-danger" role="button" asp-controller="Catalog" asp-action="MarkFound" asp-route-id="@Model.Id">Mark Found</a></p>
+
+            }
+            @*Model.NumberOfCopies == 0 &&*@
+            @if (Model.Status == "Checked Out")
+            {
+                <p id="itemPatron">Last checkout by: @Model.PatronName</p>
+                <p><a class="btn btn-lg btn-success" role="button" asp-controller="Catalog" asp-action="CheckInItem" asp-route-id="@Model.Id">Check In</a></p>
+                <p><a class="btn btn-lg btn-warning" role="button" asp-controller="Catalog" asp-action="Hold" asp-route-id="@Model.Id">Place Hold</a></p>
+
+            }
+
+            @if (Model.Status == "Available")
+            {
+                <p>Number of copies: @Model.NumberOfCopies .</p>
+                <p><a class="btn btn-lg btn-info" role="button" asp-controller="Catalog" asp-action="Checkout" asp-route-id="@Model.Id">Check Out</a></p>
+            }
+
+        </div>
+        <div class="col-md-4">
+            <table>
+                @if (Model.Type == "Book")
+                {
+                    <tr>
+                        <td class="itemLabel">ISBN:</td>
+                        <td class="itemValue">@Model.ISBN</td>
+                    </tr>
+                    <tr>
+                        <td class="itemLabel">DeweyCallNumber: </td>
+                        <td class="itemValue">@Model.DeweyIndex</td>
+                    </tr>
+                }
+                <tr>
+                    <td class="itemLabel">Cost: </td>
+                    <td class="itemValue">@Model.Cost</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-log-6">
+            <h4>Checkout History</h4>
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>Patron Name</th>
+                        <th>Card Id</th>
+                        <th>Date Loaned</th>
+                        <th>Date Returned</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @foreach(var checkout in @Model.CheckoutHistories)
+                    {
+                    <tr>
+                        <td>@checkout.PatronName</td>
+                        <td>@checkout.LibraryCard.Id</td>
+                        <td>@checkout.Checkout.ToShortDateString()</td>
+                        @if (checkout.CheckIn == DateTime.MinValue)
+                        {
+                            <td></td>
+                        }
+                        else
+                        {
+                            <td>@checkout.CheckIn.ToShortDateString()</td>
+                        }
+
+
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col log-6">
+            <h4>Current holds</h4>
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>Patron Name</th>
+                        <th>Card Id</th>
+                        <th>Hold Placed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var hold in Model.CurrentHolds)
+                    {
+                    <tr>
+                        <td>@hold.PatronName</td>
+                        <td>@hold.LibraryCardId</td>
+                        <td>@hold.HoldPlaced.ToShortDateString()</td>
+                    </tr>
+                    }
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+</div>

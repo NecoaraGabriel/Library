@@ -1,0 +1,19 @@
+D:\work\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.deps.json
+D:\work\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.dll
+D:\work\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.csproj.CoreCompileInputs.cache
+D:\work\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.AssemblyInfoInputs.cache
+D:\work\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.AssemblyInfo.cs
+D:\work\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.pdb
+D:\work\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.dll
+D:\work\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.pdb
+D:\work\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.runtimeconfig.json
+D:\work\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.runtimeconfig.dev.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.deps.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.runtimeconfig.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.runtimeconfig.dev.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.pdb

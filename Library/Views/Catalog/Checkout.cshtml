@@ -1,0 +1,33 @@
+﻿@model Library.Models.Checkout.CheckoutModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/catalog.css" />
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="detailImage" src="@Model.ImageUrl" width="320px" height="560px" />
+        </div>
+        <div class="col-md-5">
+            <div class="title">@Model.Title</div>
+            <hr />
+            <div class="details">
+                @*This is a comment*@
+                @using (Html.BeginForm("PlaceCheckout", "Catalog", FormMethod.Post))
+                {
+                    @Html.HiddenFor(x => x.AssetId)
+                    <div>
+                        Please insert your Library Card Id:
+                        @Html.TextBoxFor(x => x.LibraryCardId)
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-success btn-lg">Check Out</button>
+                    </div>
+                }
+            </div>
+        </div>
+
+
+    </div>
+</div>

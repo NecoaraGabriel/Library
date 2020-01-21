@@ -1,0 +1,23 @@
+D:\work\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.csprojAssemblyReference.cache
+D:\work\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.csproj.CoreCompileInputs.cache
+D:\work\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.AssemblyInfoInputs.cache
+D:\work\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.AssemblyInfo.cs
+D:\work\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryService.deps.json
+D:\work\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryService.dll
+D:\work\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryService.pdb
+D:\work\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryData.dll
+D:\work\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryData.pdb
+D:\work\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.csproj.CopyComplete
+D:\work\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.dll
+D:\work\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryService.deps.json
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryService.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryService.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryData.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\bin\Debug\netcoreapp2.2\LibraryData.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.csprojAssemblyReference.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.csproj.CopyComplete
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.dll
+C:\Users\Gabriel\Documents\Visual Studio 2019\Library\LibraryService\obj\Debug\netcoreapp2.2\LibraryService.pdb

@@ -1,0 +1,35 @@
+﻿@model Library.Models.Checkout.CheckoutModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/catalog.css" />
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="detailImage" src="@Model.ImageUrl" width="320px" height="560px" />
+
+        </div>
+        <div class="col-md-5">
+            <div class="title">@Model.Title</div>
+            <hr />
+            <div class="details">
+                @*This is a comment*@
+                <p>There are @Model.HoldCount holds for that item.</p>
+                @using (Html.BeginForm("PlaceHold", "Catalog", FormMethod.Post))
+                {
+                    @Html.HiddenFor(x => x.AssetId)
+                    <div>
+                        Please insert your Library Card Id:
+                        @Html.TextBoxFor(x => x.LibraryCardId)
+                    </div>
+                    <div class="button">
+                        <button typeof="submit" , class="btn btn-info btn-lg">Place Hold</button>
+                    </div>
+                }
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
